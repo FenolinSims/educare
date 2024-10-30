@@ -1,0 +1,22 @@
+.selected-stud-box {
+width: 295px !important;
+height: 220px !important;	
+max-height: 220px !important;
+}
+
+.selected-stud-box ~ .pl-listbox-bg{
+	top: 200px !important;
+}
+
+.selected-stud-box ~ .pl-listbox-bg::before {
+	width: 265px;
+}
+
+.selected_stud_cont{
+	top: 90px!important;
+	padding-top: 15px!important;
+}
+
+.selected_stud_cont .pl-listbox-parent{
+height: 230px!important;
+}

@@ -1,0 +1,251 @@
+.stud-header{
+	height: 60px;
+	background-color: var(--white);
+	padding: 0px 10px;
+	position: relative;
+	text-align: center;
+}
+
+.stud-sel-cont {
+	width: 150px;
+	display: inline-block;
+	font-size: var(--fs-13);
+	font-weight: 600;
+	text-align: left;
+}
+
+.stud-head-lbl{
+	font-size: var(--fs-20);
+	display: inline-block;
+  	font-family: "poppins-bold", "Verdana", "Helvatica", sans-serif;
+  	color: var(--prim-65);
+  	padding: 12px 5px;
+}
+
+.stud-bat-lbl{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px 10px;
+	font-size: var(--fs-18);
+	color: var(--prim-100);
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  	font-family: "poppins-bold", "Verdana", "Helvatica", sans-serif;
+}
+
+.stud-nos-lbl{
+ 	background-color: var(--prim-5);
+ 	border-radius: 50px;
+ 	padding: 4px 10px;
+ 	color: var(--prim-65);
+ 	text-align: center;
+ 	font-weight: 600;
+ 	display: inline-block;
+ 	font-size: var(--fs-13);
+}
+.stud-bat-head{
+	position: relative;
+	height: auto;
+	text-align: center;
+	padding: 4px 0px;
+}
+
+.stud-sec{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.stud-sub-sec{
+	background-color: var(--gry-5);
+	border-radius: 8px;
+	width: 95%;
+	margin: 7px auto;
+	padding: 7px 0px;
+}
+
+.stud-list-cont {
+padding-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	grid-template-rows: min-content;
+	grid-gap: 15px;
+	padding: 30px 15px;
+	overflow: auto;
+  position: absolute;
+    top: 105px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.stud-list-body {
+	  position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+}
+
+.stud-list-box{
+	width: 295px;
+	height: 245px;
+	background-color: var(--white);
+	border-radius: 12px;
+	box-shadow: 1px 6px 14px rgb(0 0 0 / 8%);
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	z-index: 1;
+	text-align: left;
+}
+
+.stud-list-parent{
+	width: 320px;
+	height: 260px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.stud-listbox-bg {
+  position: absolute;
+  top: 225px;
+  left: 15px;
+  right: 0;
+  height: 30px;
+}
+
+
+.stud-listbox-bg::before {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  right: 15px;
+  width: calc(100% + 10px);
+  background-color: var(--prim-65);
+  z-index: 0;
+  /* bottom: -10px; */
+  border-radius: 15px;
+  width: 270px;
+  height: 100%;
+}
+
+.cpop-sel-cont{
+	text-align: center;
+	padding: 5px 0px;
+	padding-bottom: 20px;
+}
+
+.cpop-sel-box{
+	width: 170px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 18px;
+	padding: 7px;
+	text-align: center;
+	margin: 0px 20px;
+	background-color: var(--gry-5);
+	font-size: var(--fs-17);
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.cpop-sel-box:hover{
+	background-color: var(--prim-10);
+	color: var(--prim-65);
+}
+
+.cpop-sel-box:hover .cpop-sel-icon path{
+	fill: var(--prim-65);
+}
+
+.cpop-sel-act {
+	background-color: var(--prim-40);
+	color: var(--white);	
+}
+
+.cpop-sel-act:hover{
+	background-color: var(--prim-40);
+	color: var(--white);	
+}
+
+.cpop-sel-act::before{
+	    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green-90);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    box-shadow: 0 0 0 2px var(--white);
+}
+
+.cpop-sel-act::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 4px;
+    border: 2px solid var(--white);
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+.cpop-sel-act .cpop-sel-icon path{
+	fill: var(--white);
+}
+
+.cpop-sel-act:hover .cpop-sel-icon path{
+	fill: var(--white);
+}
+
+.cpop-sel-icon{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	padding: 4px;
+}
+
+.cpop-inp-ico{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: var(--white);
+	border: 1px solid var(--prim-12);
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.cpop-inp-img{
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+}
+
+.cpop-inp-img path{
+	fill: var(--prim-65);
+}
+
+.cpop-inp-ico:hover{
+	background-color: var(--prim-40);
+	box-shadow: 0px 0px 0px 2px rgb(206 224 255);
+
+}
+
+.cpop-inp-ico:hover .cpop-inp-img path{
+	fill: var(--white);
+}
